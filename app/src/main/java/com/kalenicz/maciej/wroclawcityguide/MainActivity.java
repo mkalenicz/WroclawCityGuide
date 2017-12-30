@@ -8,6 +8,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.category);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.category_container, new CityFragment())
+                .commit();
     }
 }
