@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 
 public class SightsFragment extends Fragment {
-    private static final String TAG = "MyActivity";
-    private ListView listView;
     private View view;
 
     @Override
@@ -21,14 +19,12 @@ public class SightsFragment extends Fragment {
         // Inflate view object
         view = inflater.inflate(R.layout.fragment_sights, container, false);
 
-        ArrayList<Places> placesArrayList = new ArrayList<Places>();
-        placesArrayList.add(new Places("Most Grunwaldzki"));
+        ArrayList<Places> sights = PlacesList.getSights();
+        PlacesAdapter sightsAdapter = new PlacesAdapter(getActivity(), sights);
 
-        PlacesAdapter placesAdapter = new PlacesAdapter(getActivity(), placesArrayList);
-
-// Attach the adapter to a ListView
-        listView = view.findViewById(R.id.list_sights);
-        listView.setAdapter(placesAdapter);
+        // Attach the adapter to a ListView
+        ListView listViewSights = view.findViewById(R.id.list_sights);
+        listViewSights.setAdapter(sightsAdapter);
 
         return view;
     }
