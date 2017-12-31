@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     tools:context="com.kalenicz.maciej.wroclawcityguide.SightsFragment">
 
-    <TextView
+    <ListView
+        android:id="@+id/list_sights"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sights Fragment" />
+        android:layout_height="match_parent"></ListView>
 
 </FrameLayout>
