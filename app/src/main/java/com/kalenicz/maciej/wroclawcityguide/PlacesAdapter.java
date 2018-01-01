@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -30,8 +31,13 @@ public class PlacesAdapter  extends ArrayAdapter<Places> {
 
         TextView placeName = (TextView) convertView.findViewById(R.id.placeName);
         TextView placeDescription = (TextView) convertView.findViewById(R.id.placeDescription);
+        ImageView placeImage = (ImageView) convertView.findViewById(R.id.placeImage);
 
-        placeName.setText(places.placeName);
+        //placeName.setText(places.placeName);
+        placeName.setText(places.getPlaceName());
+        placeDescription.setText(places.getPlaceDescription());
+        placeImage.setImageResource(places.getPlaceImage());
+
         return convertView;
     }
 }

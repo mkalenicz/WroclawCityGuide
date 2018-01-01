@@ -5,7 +5,7 @@ package com.kalenicz.maciej.wroclawcityguide;
  */
 
 public class Places {
-   public String placeName;
+   private String placeName;
     private String placeDescription;
     private int placeImage;
 

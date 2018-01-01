@@ -25,6 +25,8 @@ public class RelaxFragment extends Fragment {
         ListView listViewRelax = view.findViewById(R.id.list_relax);
         listViewRelax.setAdapter(relaxAdapter);
 
+
+
         return view;
     }
 }
