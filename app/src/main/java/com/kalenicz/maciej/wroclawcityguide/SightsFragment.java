@@ -18,7 +18,6 @@ public class SightsFragment extends Fragment {
         // Inflate view object
         View view = inflater.inflate(R.layout.fragment_sights, container, false);
 
-       // ArrayList<Places> sights = PlacesList.getSights();
         ArrayList<Places> sights;
         sights = new ArrayList<>();
         sights.add(new Places(getString(R.string.market_square_name),getString(R.string.market_square_description), R.drawable.rynek));

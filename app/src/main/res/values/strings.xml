@@ -4,7 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="aboutCity">Wrocław is the largest city in western Poland. It lies on the banks of the River Oder in the Silesian Lowlands of Central Europe, roughly 350 kilometres (220 mi) from the Baltic Sea to the north and 40 kilometres (25 mi) from the Sudeten Mountains to the south. The population of Wrocław in 2017 was 638,364, making it the fourth-largest city in Poland and the main city of Wrocław agglomeration. A thriving multicultural centre, Wrocław is home to a growing student community and acts as the financial, cultural and commercial hub of western Poland, hosting a wide variety of music and theatrical events. Wrocław is a university city with a student population of over 130,000, making it one of the most youthful cities in the country. Since the beginning of the 20th century, the historical University of Wrocław produced nine Nobel Prize winners and is renowned for its high quality of teaching. It is also the seat of Wrocław Opera, National Puppet Theatre, Karol Lipiński Academy of Music and the National Forum of Music. The Centennial Hall in Wrocław was declared a UNESCO World Heritage Site in 2006 and is maintained by the National Heritage Board of Poland as a unique example of Expressionist architecture.</string>
     <string name="label_about_the_city">About the City</string>
-    <string name="city_tabTitles">City</string>
     <string name="market_square_name">Market Square</string>
     <string name="market_square_description">The heart of a pedestrian zone. The square is rectangular with the dimensions 213 by 178 metres.</string>
     <string name="raclawice_panorama_name">Racławice Panorama</string>
@@ -19,4 +18,9 @@
     <string name="crossfit_description">CrossFit Black Star is a place with passionate approach to physical activity, health and nutrition.</string>
     <string name="aquapark_name">Aquapark Wroclaw</string>
     <string name="aquapark_description">Aquapark Wrocław opened in February 2008. Until today it remains one of the best and most frequently visited water parks in Europe.</string>
+    <string name="city_tab_title">City</string>
+    <string name="sights_tab_title">Sights</string>
+    <string name="dining_tab_title">Dining</string>
+    <string name="relax_tab_title">Relax</string>
+    <string name="hotels_tab_title">Hotels</string>
 </resources>

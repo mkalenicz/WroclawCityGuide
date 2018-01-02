@@ -10,7 +10,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[]{"City", "Sights", "Dining", "Relax", "Hotels"};
+    private String city = MainActivity.getContext().getString(R.string.city_tab_title);
+    private String sights = MainActivity.getContext().getString(R.string.sights_tab_title);
+    private String dining = MainActivity.getContext().getString(R.string.dining_tab_title);
+    private String relax = MainActivity.getContext().getString(R.string.relax_tab_title);
+    private String hotels = MainActivity.getContext().getString(R.string.hotels_tab_title);
+    private String tabTitles[] = new String[]{city, sights, dining, relax, hotels};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
