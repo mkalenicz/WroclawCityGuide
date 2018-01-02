@@ -18,14 +18,15 @@ public class RelaxFragment extends Fragment {
         // Inflate view object
         view = inflater.inflate(R.layout.fragment_relax, container, false);
 
-        ArrayList<Places> relax = PlacesList.getRelax();
+        ArrayList<Places> relax;
+        relax = new ArrayList<>();
+        relax.add(new Places(getString(R.string.crossfit_name), getString(R.string.crossfit_description), R.drawable.crossfit));
+        relax.add(new Places(getString(R.string.aquapark_name), getString(R.string.aquapark_description), R.drawable.aquapark));
         PlacesAdapter relaxAdapter = new PlacesAdapter(getActivity(), relax);
 
         // Attach the adapter to a ListView
         ListView listViewRelax = view.findViewById(R.id.list_relax);
         listViewRelax.setAdapter(relaxAdapter);
-
-
 
         return view;
     }

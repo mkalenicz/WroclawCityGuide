@@ -15,33 +15,18 @@ public class Places {
         this.placeImage = placeImage;
     }
 
-    public Places(String placeName) {
-        this.placeName = placeName;
-    }
-
     public String getPlaceName() {
         return placeName;
-    }
-
-    public void setPlaceName(String placeName) {
-        this.placeName = placeName;
     }
 
     public String getPlaceDescription() {
         return placeDescription;
     }
 
-    public void setPlaceDescription(String placeDescription) {
-        this.placeDescription = placeDescription;
-    }
-
     public int getPlaceImage() {
         return placeImage;
     }
 
-    public void setPlaceImage(int placeImage) {
-        this.placeImage = placeImage;
-    }
 }
 
 

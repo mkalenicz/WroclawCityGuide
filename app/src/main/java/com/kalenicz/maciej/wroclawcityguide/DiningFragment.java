@@ -18,7 +18,10 @@ private View view;
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_dining, container, false);
 
-        ArrayList<Places> dining = PlacesList.getDining();
+        ArrayList<Places> dining;
+        dining = new ArrayList<>();
+        dining.add(new Places(getString(R.string.pasibus_name), getString(R.string.pasibus_description), R.drawable.pasibus));
+        dining.add(new Places(getString(R.string.pizzeria_si_name), getString(R.string.pizzeria_si_description), R.drawable.pizzeria_si));
         PlacesAdapter diningAdapter = new PlacesAdapter(getActivity(), dining);
 
         // Attach the adapter to a ListView

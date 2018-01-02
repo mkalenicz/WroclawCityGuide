@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
+
     private String tabTitles[] = new String[]{"City", "Sights", "Dining", "Relax", "Hotels"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {

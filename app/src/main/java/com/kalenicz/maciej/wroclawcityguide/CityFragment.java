@@ -18,6 +18,7 @@ public class CityFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_city, container, false);
         TextView aboutCity = view.findViewById(R.id.text_view_about_city);
         aboutCity.setText(R.string.aboutCity);
+
         return view;
     }
 }

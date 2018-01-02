@@ -29,11 +29,10 @@ public class PlacesAdapter  extends ArrayAdapter<Places> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_places, parent, false);
         }
 
-        TextView placeName = (TextView) convertView.findViewById(R.id.placeName);
-        TextView placeDescription = (TextView) convertView.findViewById(R.id.placeDescription);
-        ImageView placeImage = (ImageView) convertView.findViewById(R.id.placeImage);
+        TextView placeName = convertView.findViewById(R.id.placeName);
+        TextView placeDescription = convertView.findViewById(R.id.placeDescription);
+        ImageView placeImage = convertView.findViewById(R.id.placeImage);
 
-        //placeName.setText(places.placeName);
         placeName.setText(places.getPlaceName());
         placeDescription.setText(places.getPlaceDescription());
         placeImage.setImageResource(places.getPlaceImage());

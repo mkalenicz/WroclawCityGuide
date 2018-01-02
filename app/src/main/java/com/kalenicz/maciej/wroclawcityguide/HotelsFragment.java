@@ -19,7 +19,9 @@ public class HotelsFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_hotels, container, false);
 
-        ArrayList<Places> hotels = PlacesList.getHotels();
+        ArrayList<Places> hotels;
+        hotels = new ArrayList<>();
+        hotels.add(new Places(getString(R.string.wroclove_apartment_name), getString(R.string.wroclove_apartment_description), R.drawable.apartment));
         PlacesAdapter hotelsAdapter = new PlacesAdapter(getActivity(), hotels);
 
         // Attach the adapter to a ListView
