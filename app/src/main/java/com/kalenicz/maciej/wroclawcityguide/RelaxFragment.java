@@ -10,13 +10,12 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class RelaxFragment extends Fragment {
-    private View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate view object
-        view = inflater.inflate(R.layout.fragment_relax, container, false);
+        View view = inflater.inflate(R.layout.fragment_relax, container, false);
 
         ArrayList<Places> relax;
         relax = new ArrayList<>();

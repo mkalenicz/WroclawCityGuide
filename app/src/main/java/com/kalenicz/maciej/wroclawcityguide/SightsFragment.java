@@ -11,13 +11,12 @@ import java.util.ArrayList;
 
 
 public class SightsFragment extends Fragment {
-    private View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate view object
-        view = inflater.inflate(R.layout.fragment_sights, container, false);
+        View view = inflater.inflate(R.layout.fragment_sights, container, false);
 
        // ArrayList<Places> sights = PlacesList.getSights();
         ArrayList<Places> sights;

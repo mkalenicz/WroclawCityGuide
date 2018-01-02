@@ -10,13 +10,12 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class DiningFragment extends Fragment {
-private View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_dining, container, false);
+        View view = inflater.inflate(R.layout.fragment_dining, container, false);
 
         ArrayList<Places> dining;
         dining = new ArrayList<>();
